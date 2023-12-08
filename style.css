@@ -187,6 +187,7 @@ a:hover {
     .herotxt{
         width: auto;
         margin-top: 30px;
+	text-align: center;
 
     }
     .right{
@@ -198,7 +199,7 @@ a:hover {
         align-items: center;
 
     }
-    .input{
+    .form-row{
         text-align: left;
         width: auto;
         font-size: 0.9em;
