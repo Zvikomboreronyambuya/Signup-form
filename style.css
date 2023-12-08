@@ -1,0 +1,230 @@
+body {
+    font-family: Segoe UI, Tahoma, Geneva, 'Verdana', sans-serif;
+}
+
+/* left */
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.navimg {
+    background-image: url(./img/background-img.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 100vh;
+}
+
+.container,
+.logo{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.logo{
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    height: 10vh;
+}
+
+.odin{
+    color: #f5f5f5;
+    font-family: cursive;
+}
+
+/* right */
+
+.content {
+    width: 60vw;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.herotxt {
+    width: 90%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.right,
+p {
+    padding-left: 3vw ;
+}
+
+/* form */
+.form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 10px 20px -2px;
+}
+
+
+label {
+    text-align: left;
+    font-weight: 800;
+}
+
+input {
+    width: 100%; 
+    border: 1px solid rgb(12, 12, 12);
+    background-color: #f5f5f5;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.form-row{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.7rem;
+    opacity: 50%;
+}
+
+/* Simple CSS reset to remove default button styles */
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #596D48;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.btn:active {
+    background-color: #596D48;
+}
+
+.formtxt{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+
+p{
+    display: flex;
+    gap: 5px;
+}
+
+.input[type="password"]:valid {
+    border: 2px solid green;
+}
+
+.input[type="password"]:invalid {
+    border: 2px solid red;
+}
+
+a{
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 400;
+}
+
+a:hover {
+    color: red;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+/* Media query to apply when the screen width is 600 pixels or less */
+@media only screen and (max-width: 600px)  {
+    .container{
+        flex-flow: column;
+        height: auto;
+        text-align: center;
+    }
+    .navimg{
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        background-size: 100vw;
+    }
+    .logo{
+        width: 100vw;
+        position: static;
+        gap: 10px;
+    }
+    .content{
+        width: auto;
+        height: auto;
+    }
+    .herotxt{
+        width: auto;
+        margin-top: 30px;
+
+    }
+    .right{
+        padding: 10px 20px;
+    }
+    
+    .form{
+        flex-flow: column nowrap;
+        align-items: center;
+
+    }
+    .input{
+        text-align: left;
+        width: auto;
+        font-size: 0.9em;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        font-size: 0.9rem;
+        height: 1.5rem;
+        width: 70vw;
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    button {
+        margin-bottom: 0px;
+        width: 60vw;
+        padding: 10px 5px;
+    }
+
+    .foot{
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+    }
+
+}
